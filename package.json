@@ -66,6 +66,7 @@
     "test": "test"
   },
   "scripts": {
+    "ts-docs-gen": "ts-docs-gen --config ts-docs-gen.json",
     "docs": "npx typedoc --options ./typedoc.config.js",
     "local-link": "npm link novel-segment",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -84,6 +85,7 @@
   "devDependencies": {
     "@types/bluebird": "^3.5.20",
     "@types/node": "^9.6.5",
+    "ts-docs-gen": "^0.2.0",
     "typedoc-plugin-context": "0.0.1"
   }
 }

@@ -13,6 +13,10 @@
 
     "strict": false,
 
+    "types": [
+      "node"
+    ],
+
     "locale": "zh-TW",
     "pretty": true,
 

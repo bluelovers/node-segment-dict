@@ -1,0 +1,12 @@
+{
+  "output": "./api",
+
+  "exclude": [
+    "test",
+    "node_modules"
+  ],
+
+  "entryFile": [
+    "index.ts"
+  ]
+}
