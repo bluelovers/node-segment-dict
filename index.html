@@ -75,7 +75,7 @@
 					<li>這裡為一對多 並且順序與原版相反 =&gt; 正字,錯字,...以,分隔更多字</li>
 				</ul>
 				<h2 id="demo">demo</h2>
-				<pre><code class="lang-ts"><span class="hljs-keyword">import</span> { requireLoader, requireLoaderModule, getDictPath } <span class="hljs-keyword">from</span> <span class="hljs-string">'segment-dict'</span>;
+				<pre><code class="language-ts"><span class="hljs-keyword">import</span> { requireLoader, requireLoaderModule, getDictPath } <span class="hljs-keyword">from</span> <span class="hljs-string">'segment-dict'</span>;
 
 requireLoader(<span class="hljs-string">'jieba'</span>)(<span class="hljs-string">'../dict/nodejieba/user.dict.utf8'</span>)
     .then(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">dict</span>)
@@ -89,8 +89,7 @@ requireLoaderModule(<span class="hljs-string">'segment'</span>).load(getDictPath
     </span>{
         <span class="hljs-built_in">console</span>.log(dict);
     })
-;
-</code></pre>
+;</code></pre>
 				<h2 id="links">links</h2>
 				<ul>
 					<li><p><a href="https://github.com/bluelovers/node-segment">novel-segment</a></p>
