@@ -91,8 +91,6 @@
 							<h3>Variables</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-variable tsd-parent-kind-external-module"><a href="_script_util_.html#default_ignore" class="tsd-kind-icon">DEFAULT_<wbr>IGNORE</a></li>
-								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_script_util_.html#_zhdictcomparetable" class="tsd-kind-icon">_zh<wbr>Dict<wbr>Compare<wbr>Table</a></li>
-								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_script_util_.html#_zhdictcomparetable_chars" class="tsd-kind-icon">_zh<wbr>Dict<wbr>Compare<wbr>Table_<wbr>chars</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -100,10 +98,8 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_script_util_.html#basesortlist" class="tsd-kind-icon">base<wbr>Sort<wbr>List</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_script_util_.html#chklinetype" class="tsd-kind-icon">chk<wbr>Line<wbr>Type</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_script_util_.html#getcjkname" class="tsd-kind-icon">get<wbr>Cjk<wbr>Name</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_script_util_.html#globdict" class="tsd-kind-icon">glob<wbr>Dict</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_script_util_.html#loaddictfile" class="tsd-kind-icon">load<wbr>Dict<wbr>File</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_script_util_.html#zhdictcompare" class="tsd-kind-icon">zh<wbr>Dict<wbr>Compare</a></li>
 							</ul>
 						</section>
 					</div>
@@ -117,7 +113,7 @@
 					<div class="tsd-signature tsd-kind-icon">ILoad<wbr>Dict<wbr>File<wbr>Row2<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_script_util_.iloaddictfilerow.html" class="tsd-signature-type">ILoadDictFileRow</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/bluelovers/node-segment-dict/blob/1b50ab3/script/util.ts#L12">script/util.ts:12</a></li>
+							<li>Defined in <a href="https://github.com/bluelovers/node-segment-dict/blob/0604fa9/script/util.ts#L16">script/util.ts:16</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -130,27 +126,7 @@
 					<div class="tsd-signature tsd-kind-icon">DEFAULT_<wbr>IGNORE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[//&#x27;char*&#x27;,&#x27;**/skip&#x27;,&#x27;**/jieba&#x27;,&#x27;**/lazy&#x27;,&#x27;**/synonym&#x27;,&#x27;**/names&#x27;,]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/bluelovers/node-segment-dict/blob/1b50ab3/script/util.ts#L19">script/util.ts:19</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
-					<a name="_zhdictcomparetable" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagLet">Let</span> _zh<wbr>Dict<wbr>Compare<wbr>Table</h3>
-					<div class="tsd-signature tsd-kind-icon">_zh<wbr>Dict<wbr>Compare<wbr>Table<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;((a: string[][], b: string[][]) &#x3D;&gt;{return array_unique(a.map((value, index, array) &#x3D;&gt;{return array_unique(value.reduce(function (c, d, currentIndex){c.push(d);c.push(b[index][currentIndex]);return c;}, [] as string[]))}));})([[&#x27;一&#x27;, &#x27;二&#x27;, &#x27;两&#x27;, &#x27;三&#x27;, &#x27;四&#x27;, &#x27;五&#x27;, &#x27;六&#x27;, &#x27;七&#x27;, &#x27;八&#x27;, &#x27;九&#x27;, &#x27;十&#x27;, &#x27;十&#x27;, &#x27;零&#x27;, &#x27;幾&#x27;, &#x27;個&#x27;, &#x27;百&#x27;, &#x27;千&#x27;, &#x27;萬&#x27;, &#x27;億&#x27;],[&#x27;上&#x27;, &#x27;下&#x27;, &#x27;左&#x27;, &#x27;右&#x27;],[&#x27;東&#x27;, &#x27;南&#x27;, &#x27;西&#x27;, &#x27;北&#x27;],[&#x27;大&#x27;, &#x27;小&#x27;],[&#x27;高&#x27;, &#x27;低&#x27;],[&#x27;長&#x27;, &#x27;短&#x27;],[&#x27;內&#x27;, &#x27;外&#x27;],[&#x27;男&#x27;, &#x27;女&#x27;],[&#x27;前&#x27;, &#x27;後&#x27;],[&#x27;只&#x27;, &#x27;支&#x27;, &#x27;隻&#x27;],[&#x27;他&#x27;, &#x27;她&#x27;, &#x27;它&#x27;, &#x27;我&#x27;, &#x27;你&#x27;, &#x27;吾&#x27;, &#x27;汝&#x27;],[&#x27;快&#x27;, &#x27;慢&#x27;],[&#x27;春&#x27;, &#x27;夏&#x27;, &#x27;秋&#x27;, &#x27;冬&#x27;],[&#x27;什&#x27;, &#x27;甚&#x27;],[&#x27;侭&#x27;, &#x27;儘&#x27;, &#x27;尽&#x27;, &#x27;盡&#x27;],[&#x27;的&#x27;, &#x27;得&#x27;],[&#x27;胡&#x27;, &#x27;糊&#x27;, &#x27;鬍&#x27;],[&#x27;壹&#x27;, &#x27;貳&#x27;, &#x27;參&#x27;, &#x27;肆&#x27;, &#x27;伍&#x27;, &#x27;陸&#x27;, &#x27;柒&#x27;, &#x27;捌&#x27;, &#x27;玖&#x27;, &#x27;拾&#x27;, &#x27;什&#x27;],[ &#x27;儅&#x27;, &#x27;噹&#x27;, &#x27;当&#x27;, &#x27;當&#x27; ],[ &#x27;炮&#x27;, &#x27;砲&#x27;, &#x27;炰&#x27;, &#x27;泡&#x27; ],[ &#x27;仲&#x27; ],[ &#x27;原&#x27; ],], [[&#x27;一&#x27;, &#x27;二&#x27;, &#x27;两&#x27;, &#x27;三&#x27;, &#x27;四&#x27;, &#x27;五&#x27;, &#x27;六&#x27;, &#x27;七&#x27;, &#x27;八&#x27;, &#x27;九&#x27;, &#x27;十&#x27;, &#x27;十&#x27;, &#x27;零&#x27;, &#x27;几&#x27;, &#x27;个&#x27;, &#x27;百&#x27;, &#x27;千&#x27;, &#x27;万&#x27;, &#x27;亿&#x27;],[&#x27;上&#x27;, &#x27;下&#x27;, &#x27;左&#x27;, &#x27;右&#x27;],[&#x27;东&#x27;, &#x27;南&#x27;, &#x27;西&#x27;, &#x27;北&#x27;],[&#x27;大&#x27;, &#x27;小&#x27;],[&#x27;高&#x27;, &#x27;低&#x27;],[&#x27;长&#x27;, &#x27;短&#x27;],[&#x27;内&#x27;, &#x27;外&#x27;],[&#x27;男&#x27;, &#x27;女&#x27;],[&#x27;前&#x27;, &#x27;后&#x27;],[&#x27;只&#x27;, &#x27;支&#x27;, &#x27;隻&#x27;],[&#x27;他&#x27;, &#x27;她&#x27;, &#x27;它&#x27;, &#x27;我&#x27;, &#x27;你&#x27;, &#x27;吾&#x27;, &#x27;汝&#x27;],[&#x27;快&#x27;, &#x27;慢&#x27;],[&#x27;春&#x27;, &#x27;夏&#x27;, &#x27;秋&#x27;, &#x27;冬&#x27;],[&#x27;什&#x27;, &#x27;甚&#x27;],[&#x27;侭&#x27;, &#x27;儘&#x27;, &#x27;尽&#x27;, &#x27;盡&#x27;],[&#x27;的&#x27;, &#x27;得&#x27;],[&#x27;胡&#x27;, &#x27;糊&#x27;, &#x27;鬍&#x27;],[&#x27;壹&#x27;, &#x27;贰&#x27;, &#x27;参&#x27;, &#x27;肆&#x27;, &#x27;伍&#x27;, &#x27;陆&#x27;, &#x27;柒&#x27;, &#x27;捌&#x27;, &#x27;玖&#x27;, &#x27;拾&#x27;, &#x27;什&#x27;],[ &#x27;儅&#x27;, &#x27;噹&#x27;, &#x27;当&#x27;, &#x27;當&#x27; ],[ &#x27;炮&#x27;, &#x27;砲&#x27;, &#x27;炰&#x27;, &#x27;泡&#x27; ],[ &#x27;中&#x27; ],[ &#x27;元&#x27; ],])</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/bluelovers/node-segment-dict/blob/1b50ab3/script/util.ts#L157">script/util.ts:157</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
-					<a name="_zhdictcomparetable_chars" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagLet">Let</span> _zh<wbr>Dict<wbr>Compare<wbr>Table_<wbr>chars</h3>
-					<div class="tsd-signature tsd-kind-icon">_zh<wbr>Dict<wbr>Compare<wbr>Table_<wbr>chars<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;array_unique(_zhDictCompareTable.flat())</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/bluelovers/node-segment-dict/blob/1b50ab3/script/util.ts#L217">script/util.ts:217</a></li>
+							<li>Defined in <a href="https://github.com/bluelovers/node-segment-dict/blob/0604fa9/script/util.ts#L23">script/util.ts:23</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -167,7 +143,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bluelovers/node-segment-dict/blob/1b50ab3/script/util.ts#L117">script/util.ts:117</a></li>
+									<li>Defined in <a href="https://github.com/bluelovers/node-segment-dict/blob/0604fa9/script/util.ts#L121">script/util.ts:121</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -199,7 +175,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bluelovers/node-segment-dict/blob/1b50ab3/script/util.ts#L100">script/util.ts:100</a></li>
+									<li>Defined in <a href="https://github.com/bluelovers/node-segment-dict/blob/0604fa9/script/util.ts#L104">script/util.ts:104</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -213,32 +189,6 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
-					<a name="getcjkname" class="tsd-anchor"></a>
-					<h3>get<wbr>Cjk<wbr>Name</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Cjk<wbr>Name<span class="tsd-signature-symbol">(</span>w<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, USE_CJK_MODE<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/bluelovers/node-segment-dict/blob/1b50ab3/script/util.ts#L133">script/util.ts:133</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>w: <span class="tsd-signature-type">string</span></h5>
-								</li>
-								<li>
-									<h5>USE_CJK_MODE: <span class="tsd-signature-type">number</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
 					<a name="globdict" class="tsd-anchor"></a>
 					<h3>glob<wbr>Dict</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
@@ -248,7 +198,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bluelovers/node-segment-dict/blob/1b50ab3/script/util.ts#L28">script/util.ts:28</a></li>
+									<li>Defined in <a href="https://github.com/bluelovers/node-segment-dict/blob/0604fa9/script/util.ts#L32">script/util.ts:32</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -277,7 +227,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bluelovers/node-segment-dict/blob/1b50ab3/script/util.ts#L47">script/util.ts:47</a></li>
+									<li>Defined in <a href="https://github.com/bluelovers/node-segment-dict/blob/0604fa9/script/util.ts#L51">script/util.ts:51</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -343,32 +293,6 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">BluebirdPromise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
-					<a name="zhdictcompare" class="tsd-anchor"></a>
-					<h3>zh<wbr>Dict<wbr>Compare</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">zh<wbr>Dict<wbr>Compare<span class="tsd-signature-symbol">(</span>a<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, b<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/bluelovers/node-segment-dict/blob/1b50ab3/script/util.ts#L219">script/util.ts:219</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>a: <span class="tsd-signature-type">string</span></h5>
-								</li>
-								<li>
-									<h5>b: <span class="tsd-signature-type">string</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -454,12 +378,6 @@
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
 						<a href="_script_util_.html#default_ignore" class="tsd-kind-icon">DEFAULT_<wbr>IGNORE</a>
 					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="_script_util_.html#_zhdictcomparetable" class="tsd-kind-icon">_zh<wbr>Dict<wbr>Compare<wbr>Table</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="_script_util_.html#_zhdictcomparetable_chars" class="tsd-kind-icon">_zh<wbr>Dict<wbr>Compare<wbr>Table_<wbr>chars</a>
-					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
 						<a href="_script_util_.html#basesortlist" class="tsd-kind-icon">base<wbr>Sort<wbr>List</a>
 					</li>
@@ -467,16 +385,10 @@
 						<a href="_script_util_.html#chklinetype" class="tsd-kind-icon">chk<wbr>Line<wbr>Type</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="_script_util_.html#getcjkname" class="tsd-kind-icon">get<wbr>Cjk<wbr>Name</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_script_util_.html#globdict" class="tsd-kind-icon">glob<wbr>Dict</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
 						<a href="_script_util_.html#loaddictfile" class="tsd-kind-icon">load<wbr>Dict<wbr>File</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="_script_util_.html#zhdictcompare" class="tsd-kind-icon">zh<wbr>Dict<wbr>Compare</a>
 					</li>
 				</ul>
 			</nav>
