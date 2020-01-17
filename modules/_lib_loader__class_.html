@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>&quot;lib/loader/_class&quot; | segment-dict - v2.3.47</title>
+	<title>&quot;lib/loader/_class&quot; | segment-dict</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -23,7 +23,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">segment-dict - v2.3.47</a>
+					<a href="../index.html" class="title">segment-dict</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -81,6 +81,12 @@
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_lib_loader__class_.html#ioptions" class="tsd-kind-icon">IOptions</a></li>
 							</ul>
 						</section>
+						<section class="tsd-index-section tsd-is-not-exported">
+							<h3>Variables</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_lib_loader__class_.html#promise" class="tsd-kind-icon">Promise</a></li>
+							</ul>
+						</section>
 					</div>
 				</section>
 			</section>
@@ -89,10 +95,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module tsd-has-type-parameter">
 					<a name="ioptions" class="tsd-anchor"></a>
 					<h3>IOptions</h3>
-					<div class="tsd-signature tsd-kind-icon">IOptions&lt;T, R&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+					<div class="tsd-signature tsd-kind-icon">IOptions&lt;T, R&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>filter<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>mapper<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>parseLine<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>stringifyLine<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/bluelovers/node-segment-dict/blob/bd5a748/lib/loader/_class.ts#L12">lib/loader/_class.ts:12</a></li>
+							<li>Defined in <a href="https://github.com/bluelovers/node-segment-dict/blob/6fae9cd/lib/loader/_class.ts#L12">lib/loader/_class.ts:12</a></li>
 						</ul>
 					</aside>
 					<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -109,14 +115,14 @@
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter">
 								<h5>filter<span class="tsd-signature-symbol">: </span>function</h5>
-								<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-type-literal tsd-is-not-exported">
+								<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-type-literal">
 									<li class="tsd-signature tsd-kind-icon">filter<span class="tsd-signature-symbol">(</span>line<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
 								</ul>
 								<ul class="tsd-descriptions">
 									<li class="tsd-description">
 										<aside class="tsd-sources">
 											<ul>
-												<li>Defined in <a href="https://github.com/bluelovers/node-segment-dict/blob/bd5a748/lib/loader/_class.ts#L18">lib/loader/_class.ts:18</a></li>
+												<li>Defined in <a href="https://github.com/bluelovers/node-segment-dict/blob/6fae9cd/lib/loader/_class.ts#L18">lib/loader/_class.ts:18</a></li>
 											</ul>
 										</aside>
 										<h4 class="tsd-parameters-title">Parameters</h4>
@@ -127,17 +133,18 @@
 										</ul>
 										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
 									</li>
-							</ul>        </li>
+								</ul>
+							</li>
 							<li class="tsd-parameter">
 								<h5>mapper<span class="tsd-signature-symbol">: </span>function</h5>
-								<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-type-literal tsd-is-not-exported">
+								<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-type-literal">
 									<li class="tsd-signature tsd-kind-icon">mapper<span class="tsd-signature-symbol">(</span>line<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
 								</ul>
 								<ul class="tsd-descriptions">
 									<li class="tsd-description">
 										<aside class="tsd-sources">
 											<ul>
-												<li>Defined in <a href="https://github.com/bluelovers/node-segment-dict/blob/bd5a748/lib/loader/_class.ts#L16">lib/loader/_class.ts:16</a></li>
+												<li>Defined in <a href="https://github.com/bluelovers/node-segment-dict/blob/6fae9cd/lib/loader/_class.ts#L16">lib/loader/_class.ts:16</a></li>
 											</ul>
 										</aside>
 										<h4 class="tsd-parameters-title">Parameters</h4>
@@ -148,17 +155,18 @@
 										</ul>
 										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
 									</li>
-							</ul>        </li>
+								</ul>
+							</li>
 							<li class="tsd-parameter">
 								<h5>parse<wbr>Line<span class="tsd-signature-symbol">: </span>function</h5>
-								<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-type-literal tsd-is-not-exported">
-									<li class="tsd-signature tsd-kind-icon">parse<wbr>Line<span class="tsd-signature-symbol">(</span>input<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, oldFn<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">R</span></li>
+								<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-type-literal">
+									<li class="tsd-signature tsd-kind-icon">parse<wbr>Line<span class="tsd-signature-symbol">(</span>input<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, oldFn<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">(</span>input<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">R</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">R</span></li>
 								</ul>
 								<ul class="tsd-descriptions">
 									<li class="tsd-description">
 										<aside class="tsd-sources">
 											<ul>
-												<li>Defined in <a href="https://github.com/bluelovers/node-segment-dict/blob/bd5a748/lib/loader/_class.ts#L14">lib/loader/_class.ts:14</a></li>
+												<li>Defined in <a href="https://github.com/bluelovers/node-segment-dict/blob/6fae9cd/lib/loader/_class.ts#L14">lib/loader/_class.ts:14</a></li>
 											</ul>
 										</aside>
 										<h4 class="tsd-parameters-title">Parameters</h4>
@@ -167,10 +175,10 @@
 												<h5>input: <span class="tsd-signature-type">string</span></h5>
 											</li>
 											<li>
-												<h5><span class="tsd-flag ts-flagOptional">Optional</span> oldFn: <span class="tsd-signature-type">function</span></h5>
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> oldFn: <span class="tsd-signature-symbol">(</span>input<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">R</span></h5>
 												<ul class="tsd-parameters">
 													<li class="tsd-parameter-siganture">
-														<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
+														<ul class="tsd-signatures tsd-kind-type-literal">
 															<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>input<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">R</span></li>
 														</ul>
 														<ul class="tsd-descriptions">
@@ -190,17 +198,18 @@
 										</ul>
 										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">R</span></h4>
 									</li>
-							</ul>        </li>
+								</ul>
+							</li>
 							<li class="tsd-parameter">
 								<h5>stringify<wbr>Line<span class="tsd-signature-symbol">: </span>function</h5>
-								<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-type-literal tsd-is-not-exported">
+								<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-type-literal">
 									<li class="tsd-signature tsd-kind-icon">stringify<wbr>Line<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">R</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
 								</ul>
 								<ul class="tsd-descriptions">
 									<li class="tsd-description">
 										<aside class="tsd-sources">
 											<ul>
-												<li>Defined in <a href="https://github.com/bluelovers/node-segment-dict/blob/bd5a748/lib/loader/_class.ts#L20">lib/loader/_class.ts:20</a></li>
+												<li>Defined in <a href="https://github.com/bluelovers/node-segment-dict/blob/6fae9cd/lib/loader/_class.ts#L20">lib/loader/_class.ts:20</a></li>
 											</ul>
 										</aside>
 										<h4 class="tsd-parameters-title">Parameters</h4>
@@ -211,8 +220,27 @@
 										</ul>
 										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
 									</li>
-							</ul>        </li>
+								</ul>
+							</li>
 						</ul>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
+				<h2>Variables</h2>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="promise" class="tsd-anchor"></a>
+					<h3>Promise</h3>
+					<div class="tsd-signature tsd-kind-icon">Promise<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/bluelovers/node-segment-dict/blob/6fae9cd/lib/loader/_class.ts#L5">lib/loader/_class.ts:5</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Created by user on 2018/4/13/013.</p>
+						</div>
 					</div>
 				</section>
 			</section>
@@ -296,6 +324,9 @@
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-has-type-parameter">
 						<a href="_lib_loader__class_.html#ioptions" class="tsd-kind-icon">IOptions</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_lib_loader__class_.html#promise" class="tsd-kind-icon">Promise</a>
 					</li>
 				</ul>
 			</nav>

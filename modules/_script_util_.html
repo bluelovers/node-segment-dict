@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>&quot;script/util&quot; | segment-dict - v2.3.47</title>
+	<title>&quot;script/util&quot; | segment-dict</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -23,7 +23,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">segment-dict - v2.3.47</a>
+					<a href="../index.html" class="title">segment-dict</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -90,7 +90,10 @@
 						<section class="tsd-index-section ">
 							<h3>Variables</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_script_util_.html#bluebirdpromise" class="tsd-kind-icon">Bluebird<wbr>Promise</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-external-module"><a href="_script_util_.html#default_ignore" class="tsd-kind-icon">DEFAULT_<wbr>IGNORE</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_script_util_.html#strutil" class="tsd-kind-icon">Str<wbr>Util</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_script_util_.html#naturalcompare" class="tsd-kind-icon">natural<wbr>Compare</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -112,10 +115,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module tsd-has-type-parameter">
 					<a name="iloaddictfilerow2" class="tsd-anchor"></a>
 					<h3>ILoad<wbr>Dict<wbr>File<wbr>Row2</h3>
-					<div class="tsd-signature tsd-kind-icon">ILoad<wbr>Dict<wbr>File<wbr>Row2&lt;D&gt;<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_script_util_.iloaddictfilerow.html" class="tsd-signature-type">ILoadDictFileRow</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">object</span></div>
+					<div class="tsd-signature tsd-kind-icon">ILoad<wbr>Dict<wbr>File<wbr>Row2&lt;D&gt;<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_script_util_.iloaddictfilerow.html" class="tsd-signature-type">ILoadDictFileRow</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>cjk_id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>file<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>line_type<span class="tsd-signature-symbol">: </span><a href="../enums/_script_util_.enumlinetype.html" class="tsd-signature-type">EnumLineType</a><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/bluelovers/node-segment-dict/blob/bd5a748/script/util.ts#L16">script/util.ts:16</a></li>
+							<li>Defined in <a href="https://github.com/bluelovers/node-segment-dict/blob/6fae9cd/script/util.ts#L16">script/util.ts:16</a></li>
 						</ul>
 					</aside>
 					<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -128,13 +131,43 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Variables</h2>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="bluebirdpromise" class="tsd-anchor"></a>
+					<h3>Bluebird<wbr>Promise</h3>
+					<div class="tsd-signature tsd-kind-icon">Bluebird<wbr>Promise<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/bluelovers/node-segment-dict/blob/6fae9cd/script/util.ts#L4">script/util.ts:4</a></li>
+						</ul>
+					</aside>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module">
 					<a name="default_ignore" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> DEFAULT_<wbr>IGNORE</h3>
-					<div class="tsd-signature tsd-kind-icon">DEFAULT_<wbr>IGNORE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[//&#x27;char*&#x27;,&#x27;**/skip&#x27;,&#x27;**/jieba&#x27;,&#x27;**/lazy&#x27;,&#x27;**/synonym&#x27;,&#x27;**/names&#x27;,]</span></div>
+					<div class="tsd-signature tsd-kind-icon">DEFAULT_<wbr>IGNORE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = [//&#x27;char*&#x27;,&#x27;**/skip&#x27;,&#x27;**/jieba&#x27;,&#x27;**/lazy&#x27;,&#x27;**/synonym&#x27;,&#x27;**/names&#x27;,]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/bluelovers/node-segment-dict/blob/bd5a748/script/util.ts#L23">script/util.ts:23</a></li>
+							<li>Defined in <a href="https://github.com/bluelovers/node-segment-dict/blob/6fae9cd/script/util.ts#L23">script/util.ts:23</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="strutil" class="tsd-anchor"></a>
+					<h3>Str<wbr>Util</h3>
+					<div class="tsd-signature tsd-kind-icon">Str<wbr>Util<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/bluelovers/node-segment-dict/blob/6fae9cd/script/util.ts#L10">script/util.ts:10</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="naturalcompare" class="tsd-anchor"></a>
+					<h3>natural<wbr>Compare</h3>
+					<div class="tsd-signature tsd-kind-icon">natural<wbr>Compare<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/bluelovers/node-segment-dict/blob/6fae9cd/script/util.ts#L8">script/util.ts:8</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -151,7 +184,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bluelovers/node-segment-dict/blob/bd5a748/script/util.ts#L142">script/util.ts:142</a></li>
+									<li>Defined in <a href="https://github.com/bluelovers/node-segment-dict/blob/6fae9cd/script/util.ts#L142">script/util.ts:142</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h4>
@@ -168,7 +201,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bluelovers/node-segment-dict/blob/bd5a748/script/util.ts#L155">script/util.ts:155</a></li>
+									<li>Defined in <a href="https://github.com/bluelovers/node-segment-dict/blob/6fae9cd/script/util.ts#L155">script/util.ts:155</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h4>
@@ -185,7 +218,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bluelovers/node-segment-dict/blob/bd5a748/script/util.ts#L126">script/util.ts:126</a></li>
+									<li>Defined in <a href="https://github.com/bluelovers/node-segment-dict/blob/6fae9cd/script/util.ts#L126">script/util.ts:126</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -217,7 +250,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bluelovers/node-segment-dict/blob/bd5a748/script/util.ts#L109">script/util.ts:109</a></li>
+									<li>Defined in <a href="https://github.com/bluelovers/node-segment-dict/blob/6fae9cd/script/util.ts#L109">script/util.ts:109</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -240,7 +273,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bluelovers/node-segment-dict/blob/bd5a748/script/util.ts#L32">script/util.ts:32</a></li>
+									<li>Defined in <a href="https://github.com/bluelovers/node-segment-dict/blob/6fae9cd/script/util.ts#L32">script/util.ts:32</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -252,7 +285,7 @@
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> pattern: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> ignore: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;DEFAULT_IGNORE</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> ignore: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = DEFAULT_IGNORE</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
@@ -263,13 +296,13 @@
 					<a name="loaddictfile" class="tsd-anchor"></a>
 					<h3>load<wbr>Dict<wbr>File</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
-						<li class="tsd-signature tsd-kind-icon">load<wbr>Dict<wbr>File&lt;T&gt;<span class="tsd-signature-symbol">(</span>file<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, fn<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">function</span>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BluebirdPromise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">load<wbr>Dict<wbr>File&lt;T&gt;<span class="tsd-signature-symbol">(</span>file<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, fn<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">(</span>list<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span>, cur<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">{ </span>parseFn<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">(</span>line<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_script_util_.html#bluebirdpromise" class="tsd-signature-type">BluebirdPromise</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bluelovers/node-segment-dict/blob/bd5a748/script/util.ts#L51">script/util.ts:51</a></li>
+									<li>Defined in <a href="https://github.com/bluelovers/node-segment-dict/blob/6fae9cd/script/util.ts#L51">script/util.ts:51</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -284,10 +317,10 @@
 									<h5>file: <span class="tsd-signature-type">string</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> fn: <span class="tsd-signature-type">function</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> fn: <span class="tsd-signature-symbol">(</span>list<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span>, cur<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span></h5>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-siganture">
-											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
+											<ul class="tsd-signatures tsd-kind-type-literal">
 												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>list<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span>, cur<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 											</ul>
 											<ul class="tsd-descriptions">
@@ -308,13 +341,13 @@
 									</ul>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <span class="tsd-signature-type">object</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <span class="tsd-signature-symbol">{ </span>parseFn<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">(</span>line<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span></h5>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter">
-											<h5><span class="tsd-flag ts-flagOptional">Optional</span> parse<wbr>Fn<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">function</span></h5>
+											<h5><span class="tsd-flag ts-flagOptional">Optional</span> parse<wbr>Fn<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">(</span>line<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span></h5>
 											<ul class="tsd-parameters">
 												<li class="tsd-parameter-siganture">
-													<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-variable tsd-is-not-exported">
+													<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-variable">
 														<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>line<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
 													</ul>
 													<ul class="tsd-descriptions">
@@ -334,7 +367,7 @@
 									</ul>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">BluebirdPromise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="_script_util_.html#bluebirdpromise" class="tsd-signature-type">BluebirdPromise</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -423,8 +456,17 @@
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-has-type-parameter">
 						<a href="_script_util_.html#iloaddictfilerow2" class="tsd-kind-icon">ILoad<wbr>Dict<wbr>File<wbr>Row2</a>
 					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_script_util_.html#bluebirdpromise" class="tsd-kind-icon">Bluebird<wbr>Promise</a>
+					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
 						<a href="_script_util_.html#default_ignore" class="tsd-kind-icon">DEFAULT_<wbr>IGNORE</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_script_util_.html#strutil" class="tsd-kind-icon">Str<wbr>Util</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_script_util_.html#naturalcompare" class="tsd-kind-icon">natural<wbr>Compare</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_script_util_.html#all_default_load_dict" class="tsd-kind-icon">all_<wbr>default_<wbr>load_<wbr>dict</a>
